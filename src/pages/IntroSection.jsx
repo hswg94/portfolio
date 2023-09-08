@@ -10,6 +10,7 @@ import introData from "../data/introData";
 
 const greeting = "Hello, I am William!";
 const bio = "A Web Developer specialised in React";
+const intro = "I built this website with React using the Vite build tool and styled it using Chakra UI."
 
 const IntroSection = () => (
   <Fullscreen
@@ -23,6 +24,7 @@ const IntroSection = () => (
         {greeting}
       </Heading>
       <Text>{bio}</Text>
+      <Text align="center" as='em' color='whiteAlpha.600'>{intro}</Text>
     </VStack>
 
     <Center>
