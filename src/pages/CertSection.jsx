@@ -10,7 +10,7 @@ const CertSection = () => {
         <Heading as="h1">Featured Certificates</Heading>
       </Center>
       <Center>
-        <SimpleGrid minChildWidth="350px" spacing="10" maxW="100%">
+        <SimpleGrid minChildWidth="300px" spacing="10" maxW="100%">
           {certData.map((cert) => (
             <CertCard
               key={cert.title}

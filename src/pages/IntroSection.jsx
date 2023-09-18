@@ -23,18 +23,19 @@ const IntroSection = () => (
       <Heading as="h1" size="2xl">
         {greeting}
       </Heading>
-      <Text>{bio}</Text>
+      <Text align="center">{bio}</Text>
       <Text align="center" as='em' color='whiteAlpha.600'>{intro}</Text>
     </VStack>
 
     <Center>
-      <SimpleGrid minChildWidth="350px" spacing="10" maxW="100%">
+      <SimpleGrid minChildWidth="300px" spacing="10" maxW="100%">
         {introData.map(({ title, icon, tech }) => (
           <Card
             background="whiteAlpha.800"
             align="center"
             key={title}
             borderRadius="3xl"
+            maxW="75vw"
           >
             <CardHeader my={2}>
               <HStack spacing={5} key={name}>
