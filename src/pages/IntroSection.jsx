@@ -18,13 +18,13 @@ const IntroSection = () => (
     backgroundColor="#2A4365"
     id="intro-section"
   >
-    <VStack mb="10vh">
+    <VStack mb="10vh" textAlign="center"> 
       <Avatar src="" />
       <Heading as="h1" size="2xl">
         {greeting}
       </Heading>
-      <Text align="center">{bio}</Text>
-      <Text align="center" as='em' color='whiteAlpha.600'>{intro}</Text>
+      <Text>{bio}</Text>
+      <Text as='em' color='whiteAlpha.600'>{intro}</Text>
     </VStack>
 
     <Center>
@@ -35,7 +35,7 @@ const IntroSection = () => (
             align="center"
             key={title}
             borderRadius="3xl"
-            maxW="75vw"
+            maxW="80vw"
           >
             <CardHeader my={2}>
               <HStack spacing={5} key={name}>
