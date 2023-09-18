@@ -13,7 +13,11 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectCard = ({ title, desc, image, url }) => {
   return (
-    <Card backgroundColor="whiteAlpha.800" borderRadius="xl" maxW="75vw">
+    <Card 
+    backgroundColor="whiteAlpha.800" 
+    borderRadius="xl" 
+    width="350px"
+    maxWidth="80vw">
       <Image src={image} height="45%" borderTopRadius="xl" />
       <CardBody>
         <Stack spacing={3}>

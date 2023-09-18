@@ -15,10 +15,11 @@ import { FaExternalLinkAlt } from "react-icons/fa"
 const CertCard = ({ title, desc, image, url }) => {
   return (
     <Card
-      maxW="75vw"
       background="whiteAlpha.800"
       align="center"
-      borderRadius="15"
+      borderRadius="2xl"
+      width="350px"
+      maxWidth="80vw"
     >
       <CardHeader my={3}>
         <Heading size="md">{title}</Heading>

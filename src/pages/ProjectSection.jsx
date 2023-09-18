@@ -7,12 +7,10 @@ const ProjectSection = () => {
   return (
     <Fullscreen backgroundColor="#14532d" isdarkbackground="true" id="project-section">
       <Center mb="10vh">
-        <Heading as="h1">
-          Featured Projects
-        </Heading>
+        <Heading as="h1">Featured Projects</Heading>
       </Center>
       <Center>
-        <SimpleGrid minChildWidth="300px" spacing="10" maxW="100%">
+        <SimpleGrid minChildWidth="250px" spacing="10" maxW="90%">
           {projectData.map((project) => (
             <ProjectCard
               key={project.title}

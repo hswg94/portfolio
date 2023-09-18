@@ -28,14 +28,15 @@ const IntroSection = () => (
     </VStack>
 
     <Center>
-      <SimpleGrid minChildWidth="300px" spacing="10" maxW="100%">
+      <SimpleGrid minChildWidth="250px" spacing="10" maxW="90%">
         {introData.map(({ title, icon, tech }) => (
           <Card
             background="whiteAlpha.800"
             align="center"
             key={title}
             borderRadius="3xl"
-            maxW="80vw"
+            width="350px"
+            maxWidth="80vw"
           >
             <CardHeader my={2}>
               <HStack spacing={5} key={name}>
