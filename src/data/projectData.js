@@ -2,12 +2,12 @@ const projectData = [
   {
     title: "eCommerce Concept",
     desc:
-    "This application is an eCommerce proof of concept built with React, Redux, Express, Node, and MongoDB. It features authentication, authorization, product ratings and reviews, a payment gateway, and administration functionalities.",
+    "This is an eCommerce proof of concept built with MongoDB, Express.js, React.js, Redux, and Node.js,. It features Authentication, Authorization, Product Search, Product Ratings/Reviews, Checkout/Payment Gateway, & Administration Features.",
     image: "./images/photo2.jpg",
     url: "https://william-ecommercepoc.onrender.com/",
   },
   {
-    title: "MERN Auth",
+    title: "MERN Authentication",
     desc:
       "This application is designed to showcase an Authentication system built with MongoDB, Express.js, React.js, Redux, and Node.js, serving as a foundation for further exploration and development.",
     image: "./images/photo3.jpg",
