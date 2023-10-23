@@ -2,7 +2,8 @@ const projectData = [
   {
     title: "eCommerce Concept",
     desc:
-    "This application is an eCommerce proof of concept built with React, Redux, Express, Node, and MongoDB. It features authentication, authorization, product ratings and reviews, a payment gateway, and administration functionalities."    image: "./images/photo2.jpg",
+    "This application is an eCommerce proof of concept built with React, Redux, Express, Node, and MongoDB. It features authentication, authorization, product ratings and reviews, a payment gateway, and administration functionalities.",
+    image: "./images/photo2.jpg",
     url: "https://william-ecommercepoc.onrender.com/",
   },
   {
