@@ -19,7 +19,7 @@ const CertSection = () => {
             <CertCard
               key={cert.title}
               title={cert.title}
-              desc={cert.desc}
+              date={cert.date}
               image={cert.image}
               url={cert.url}
             />
