@@ -6,9 +6,12 @@ const Fullscreen = (props) => {
     <Box
       minHeight="100vh"
       backgroundColor={props.backgroundColor}
-      color={props.isdarkbackground ? "white" : "black"}
+      color={props.isDarkBackground ? "white" : "black"}
+      bgImage={props.backgroundImageUrl}
+      bgSize="cover"
+      bgPosition="center"
     >
-      <Container py="15vh" maxW="1280px" {...props}>
+      <Container py="15vh" maxW="1280px">
         {props.children}
       </Container>
     </Box>

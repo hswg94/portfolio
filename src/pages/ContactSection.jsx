@@ -50,7 +50,7 @@ const ContactSection = () => {
   }, [response]);
 
   return (
-    <Fullscreen isdarkbackground="true" backgroundColor="#512DA8" id="contact-section">
+    <Fullscreen isDarkBackground backgroundColor="#512DA8" id="contact-section">
       <Center mb="10vh">
         <Heading as="h1">Contact me</Heading>
       </Center>

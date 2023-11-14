@@ -5,9 +5,23 @@ import projectData from "../data/projectData";
 
 const ProjectSection = () => {
   return (
-    <Fullscreen backgroundColor="#14532d" isdarkbackground="true" id="project-section">
+    <Fullscreen
+      id="project-section"
+      backgroundImageUrl='url("./images/background/projects.png")'
+      isDarkBackground
+    >
       <Center mb="10vh">
-        <Heading as="h1">Featured Projects</Heading>
+        <Heading
+          textShadow="0px 3px #000000"
+          align="center"
+          bg="blackAlpha.600"
+          width="90%"
+          p={4}
+          rounded="3xl"
+          as="h1"
+        >
+          Featured Projects
+        </Heading>
       </Center>
       <Center>
         <SimpleGrid minChildWidth="250px" spacing="10" maxW="90%">

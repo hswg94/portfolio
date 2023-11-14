@@ -33,7 +33,7 @@ const Header = () => {
   };
 
   return (
-    <Box backgroundColor="#18181b" position="sticky" top="0" zIndex={1}>
+    <Box backgroundColor="black" position="sticky" top="0" zIndex={1}>
       <Box color="white" maxWidth="1600px" margin="auto" p={3}>
         <HStack justifyContent="space-between" alignItems="center">
           <HStack spacing={3}>
