@@ -11,7 +11,7 @@ const Fullscreen = (props) => {
       bgSize="cover"
       bgPosition="center"
     >
-      <Container py="15vh" maxW="1280px">
+      <Container py="15vh" maxW="1280px" id={props.id}>
         {props.children}
       </Container>
     </Box>
