@@ -3,16 +3,15 @@ import { Heading, Image } from "@chakra-ui/react";
 import {
   Card,
   CardHeader,
-  CardBody,
   CardFooter,
-  Divider,
   Link,
-  Icon
+  Icon,
+  Text
 } from "@chakra-ui/react";
 
 import { FaExternalLinkAlt } from "react-icons/fa"
 
-const CertCard = ({ title, desc, image, url }) => {
+const CertCard = ({ title, date, image, url }) => {
   return (
     <Card
       background="whiteAlpha.800"
@@ -21,18 +20,13 @@ const CertCard = ({ title, desc, image, url }) => {
       width="350px"
       maxWidth="80vw"
     >
-      <CardHeader my={3}>
+      <CardHeader mt={2} align="center">
         <Heading size="md">{title}</Heading>
+        <Text>{date}</Text>
       </CardHeader>
-      <Divider borderRadius="xl" borderWidth="3px" width="95%" />
-      <CardBody>
-        <Image src={image}/>
-        {/* <Text>{description}</Text> */}
-      </CardBody>
-
-      <Divider width="95%" />
+      <Image src={image} height="100%"/>
       <CardFooter>
-        <Link fontSize="xl" href={url} isExternal>
+        <Link fontWeight='semibold' fontSize="xl" href={url} isExternal>
           View Certificate <Icon boxSize={4} as={FaExternalLinkAlt} />
         </Link>
       </CardFooter>
