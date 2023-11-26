@@ -5,19 +5,18 @@ import {
   CardBody,
   CardFooter,
   Divider,
-  Link,
-  Icon,
 } from "@chakra-ui/react";
 
-import { FaExternalLinkAlt } from "react-icons/fa";
+import CardModal from "./CardModal";
 
 const ProjectCard = ({ title, desc, image, url }) => {
   return (
-    <Card 
-    backgroundColor="whiteAlpha.800" 
-    borderRadius="xl" 
-    width="350px"
-    maxWidth="80vw">
+    <Card
+      backgroundColor="whiteAlpha.800"
+      borderRadius="xl"
+      width="350px"
+      maxWidth="80vw"
+    >
       <Image src={image} height="45%" borderTopRadius="xl" />
       <CardBody>
         <Stack spacing={3}>
@@ -29,9 +28,7 @@ const ProjectCard = ({ title, desc, image, url }) => {
       <Divider margin="auto" width="95%" />
       <CardFooter>
         {url ? (
-          <Link fontSize="xl" href={url} isExternal>
-            View Project <Icon boxSize={4} as={FaExternalLinkAlt} />
-          </Link>
+          <CardModal url={url}/>
         ) : (
           <Text fontSize="xl" href={url} isExternal>
             To be hosted

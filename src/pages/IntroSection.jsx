@@ -1,5 +1,4 @@
 import {
-  Avatar,
   Heading,
   VStack,
   Card,

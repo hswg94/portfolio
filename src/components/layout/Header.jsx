@@ -4,7 +4,7 @@ import {
   FaGithub,
 } from "react-icons/fa6";
 
-import { Icon, Box, HStack } from "@chakra-ui/react";
+import { Icon, Box, HStack, Link} from "@chakra-ui/react";
 
 const socials = [
   {
@@ -44,12 +44,12 @@ const Header = () => {
             ))}
           </HStack>
           <HStack spacing={8}>
-            <a href="#project" onClick={scrollToSection("project-section")}>
+            <Link as="button" onClick={scrollToSection("project-section")}>
               Projects
-            </a>
-            <a href="#cert" onClick={scrollToSection("cert-section")}>
+            </Link>
+            <Link as="button" onClick={scrollToSection("cert-section")}>
               Certificates
-            </a>
+            </Link>
           </HStack>
         </HStack>
       </Box>
