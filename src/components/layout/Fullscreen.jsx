@@ -1,19 +1,19 @@
 /* eslint-disable react/prop-types */
-import { Container, Box } from "@chakra-ui/react";
+import { Box, Grid } from "@chakra-ui/react";
 
 const Fullscreen = (props) => {
   return (
     <Box
-      minHeight="100vh"
+      minHeight="80vh"
       backgroundColor={props.backgroundColor}
       color={props.isDarkBackground ? "white" : "black"}
       bgImage={props.backgroundImageUrl}
       bgSize="cover"
       bgPosition="center"
     >
-      <Container py="15vh" maxW="1280px" id={props.id}>
+      <Grid mx="auto" templateColumns="repeat(12, 1fr)" width="960px" maxW="80vw" py="15vh" id={props.id} gap={6}>
         {props.children}
-      </Container>
+      </Grid>
     </Box>
   );
 };

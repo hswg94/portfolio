@@ -1,5 +1,5 @@
 import Fullscreen from "../components/layout/Fullscreen";
-import { Center, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Heading, GridItem } from "@chakra-ui/react";
 import ProjectCard from "../components/ProjectCard";
 import projectData from "../data/projectData";
 
@@ -10,22 +10,23 @@ const ProjectSection = () => {
       backgroundImageUrl='url("./images/background/projects.png")'
       isDarkBackground
     >
-      <Center mb="10vh">
+      <GridItem colSpan={12}>
         <Heading
           textShadow="0px 3px #000000"
-          align="center"
           bg="blackAlpha.600"
-          width="90%"
+          mb="5vh"
           p={4}
-          rounded="3xl"
+          rounded="xl"
           as="h1"
+          align="center"
         >
           Featured Projects
         </Heading>
-      </Center>
-      <Center>
-        <SimpleGrid minChildWidth="250px" spacing="10" maxW="90%">
-          {projectData.map((project) => (
+      </GridItem>
+
+      {projectData.map((project) => (
+        <>
+          <GridItem colSpan={{ base: 12, md: 6, lg: 4 }}>
             <ProjectCard
               key={project.title}
               title={project.title}
@@ -33,9 +34,9 @@ const ProjectSection = () => {
               image={project.image}
               url={project.url}
             />
-          ))}
-        </SimpleGrid>
-      </Center>
+          </GridItem>
+        </>
+      ))}
     </Fullscreen>
   );
 };

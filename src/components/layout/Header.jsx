@@ -1,10 +1,6 @@
-import {
-  FaEnvelope,
-  FaLinkedin,
-  FaGithub,
-} from "react-icons/fa6";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa6";
 
-import { Icon, Box, HStack, Link} from "@chakra-ui/react";
+import { Icon, Box, HStack, Link } from "@chakra-ui/react";
 
 const socials = [
   {
@@ -27,32 +23,42 @@ const Header = () => {
     if (element) {
       window.scrollTo({
         top: element.offsetTop,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
 
   return (
-    <Box backgroundColor="black" position="sticky" top="0" zIndex={1}>
-      <Box color="white" maxWidth="1600px" margin="auto" p={3}>
-        <HStack justifyContent="space-between" alignItems="center">
-          <HStack spacing={3}>
-            {socials.map(({ icon, url }) => (
-              <a key={url} href={url} target="_blank" rel="noopener noreferrer">
-                <Icon mb="-1.5" boxSize={8} as={icon} key={url} />
-              </a>
-            ))}
-          </HStack>
-          <HStack spacing={8}>
-            <Link as="button" onClick={scrollToSection("project-section")}>
-              Projects
-            </Link>
-            <Link as="button" onClick={scrollToSection("cert-section")}>
-              Certificates
-            </Link>
-          </HStack>
+    <Box
+      backgroundColor="black"
+      position="sticky"
+      top="0"
+      zIndex={1}
+      align="center"
+    >
+      <HStack
+        justifyContent="space-between"
+        color="white"
+        width="1280px"
+        maxW="80vw"
+        p={3}
+      >
+        <HStack spacing={3}>
+          {socials.map(({ icon, url }) => (
+            <a key={url} href={url} target="_blank" rel="noopener noreferrer">
+              <Icon mb="-1.5" boxSize={8} as={icon} key={url} />
+            </a>
+          ))}
         </HStack>
-      </Box>
+        <HStack spacing={3}>
+          <Link as="button" onClick={scrollToSection("project-section")}>
+            Projects
+          </Link>
+          <Link as="button" onClick={scrollToSection("cert-section")}>
+            Certificates
+          </Link>
+        </HStack>
+      </HStack>
     </Box>
   );
 };

@@ -3,14 +3,13 @@ import {
   VStack,
   Card,
   CardHeader,
-  SimpleGrid,
   CardBody,
   Text,
   Divider,
   Icon,
   HStack,
-  Center,
   Box,
+  GridItem,
 } from "@chakra-ui/react";
 
 import Fullscreen from "../components/layout/Fullscreen";
@@ -26,42 +25,35 @@ const IntroSection = () => (
     backgroundImageUrl='url("./images/background/intro.png")'
     isDarkBackground
   >
-    <Box bg="blackAlpha.600" maxW="90%" mx="auto" p={4} mb="10vh" rounded="3xl">
-      <VStack
-        fontWeight="semibold"
-        textShadow="0px 2px #000000"
-        textAlign="center"
-      >
-        {/* <Avatar src="" /> */}
-        <Heading as="h1" size="2xl">
-          {greeting}
-        </Heading>
-        <Text>{bio}</Text>
-        <Text mt={2} as="em">
-          {intro}
-        </Text>
-      </VStack>
-    </Box>
+    <GridItem colSpan={12}>
+      <Box bg="blackAlpha.600" p={10} mb="5vh" rounded="xl" align="center">
+        <VStack fontWeight="semibold" textShadow="0px 2px #000000">
+          {/* <Avatar src="" /> */}
+          <Heading as="h1" size="2xl">{greeting}</Heading>
+          <Text>{bio}</Text>
+          <Text mt={2} as="em">{intro}</Text>
+        </VStack>
+      </Box>
+    </GridItem>
 
-    <Center>
-      <SimpleGrid minChildWidth="250px" spacing="10" maxW="90%">
-        {introData.map(({ title, icon, tech }) => (
+    {introData.map(({ title, icon, tech }) => (
+      <>
+        <GridItem colSpan={{ base: 12, md: 6, lg: 4}}>
           <Card
+            key={title}
             background="blackAlpha.600"
             align="center"
-            key={title}
             borderRadius="3xl"
-            width="350px"
-            maxWidth="80vw"
             color="whiteAlpha.900"
+            height={{base: "auto", md: "350px"}}
           >
             <CardHeader my={2}>
-              <HStack spacing={5} key={name}>
+              <HStack spacing={5}>
                 <Heading size="lg">{title}</Heading>
                 <Icon boxSize={7} as={icon} />
               </HStack>
             </CardHeader>
-            <Divider borderRadius="xl" borderWidth="3px" width="80%" />
+            <Divider borderRadius="xl" borderWidth="3px" />
             <CardBody>
               {tech.map(({ name, icon }) => (
                 <HStack spacing={4} key={name}>
@@ -71,9 +63,9 @@ const IntroSection = () => (
               ))}
             </CardBody>
           </Card>
-        ))}
-      </SimpleGrid>
-    </Center>
+        </GridItem>
+      </>
+    ))}
   </Fullscreen>
 );
 
