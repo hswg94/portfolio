@@ -15,16 +15,14 @@ const CertCard = ({ title, date, image, url }) => {
   return (
     <Card
       background="whiteAlpha.800"
+      borderRadius="3xl"
       align="center"
-      borderRadius="2xl"
-      width="350px"
-      maxWidth="80vw"
     >
       <CardHeader mt={2} align="center">
         <Heading size="md">{title}</Heading>
         <Text>{date}</Text>
       </CardHeader>
-      <Image src={image} height="100%"/>
+      <Image src={image}/>
       <CardFooter>
         <Link fontWeight='semibold' fontSize="xl" href={url} isExternal>
           View Certificate <Icon boxSize={4} as={FaExternalLinkAlt} />

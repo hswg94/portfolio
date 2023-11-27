@@ -13,19 +13,17 @@ const ProjectCard = ({ title, desc, image, url }) => {
   return (
     <Card
       backgroundColor="whiteAlpha.800"
-      borderRadius="xl"
-      width="350px"
-      maxWidth="80vw"
+      borderRadius="3xl"
+      height={{base: "auto", md: "500px"}}
     >
-      <Image src={image} height="45%" borderTopRadius="xl" />
-      <CardBody>
+      <Image src={image} height="30%" borderTopRadius="3xl" />
+      <CardBody maxHeight="50%">
         <Stack spacing={3}>
           <Heading size="md">{title}</Heading>
           <Text>{desc}</Text>
         </Stack>
       </CardBody>
-
-      <Divider margin="auto" width="95%" />
+      <Divider mx="auto" mt="auto" width="95%" />
       <CardFooter>
         {url ? (
           <CardModal url={url}/>

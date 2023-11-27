@@ -1,5 +1,5 @@
 import Fullscreen from "../components/layout/Fullscreen";
-import { SimpleGrid, Center, Heading, Box } from "@chakra-ui/react";
+import {Heading, GridItem } from "@chakra-ui/react";
 import certData from "../data/certData";
 import CertCard from "../components/CertCard";
 
@@ -10,22 +10,23 @@ const CertSection = () => {
       backgroundImageUrl='url("./images/background/certs.png")'
       isDarkBackground
     >
-      <Center mb="10vh">
+      <GridItem colSpan={12}>
         <Heading
           textShadow="0px 3px #000000"
-          align="center"
           bg="blackAlpha.600"
-          width="90%"
+          mb="5vh"
           p={4}
-          rounded="3xl"
+          rounded="xl"
           as="h1"
+          align="center"
         >
           Featured Certificates
         </Heading>
-      </Center>
-      <Center>
-        <SimpleGrid minChildWidth="250px" spacing="20" maxW="90%">
-          {certData.map((cert) => (
+      </GridItem>
+
+      {certData.map((cert) => (
+        <>
+          <GridItem colSpan={{ base: 12, md: 6, lg: 4 }}>
             <CertCard
               key={cert.title}
               title={cert.title}
@@ -33,9 +34,9 @@ const CertSection = () => {
               image={cert.image}
               url={cert.url}
             />
-          ))}
-        </SimpleGrid>
-      </Center>
+          </GridItem>
+        </>
+      ))}
     </Fullscreen>
   );
 };
