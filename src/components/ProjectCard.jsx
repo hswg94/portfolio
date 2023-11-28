@@ -28,7 +28,7 @@ const ProjectCard = ({ title, desc, image, url }) => {
         {url ? (
           <CardModal url={url}/>
         ) : (
-          <Text fontSize="xl" href={url} isExternal>
+          <Text fontSize="xl">
             To be hosted
           </Text>
         )}

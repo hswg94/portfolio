@@ -4,7 +4,7 @@ import { Box, Grid } from "@chakra-ui/react";
 const Fullscreen = (props) => {
   return (
     <Box
-      minHeight="80vh"
+      minHeight="100vh"
       backgroundColor={props.backgroundColor}
       color={props.isDarkBackground ? "white" : "black"}
       bgImage={props.backgroundImageUrl}

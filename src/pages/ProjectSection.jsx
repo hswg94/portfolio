@@ -2,6 +2,7 @@ import Fullscreen from "../components/layout/Fullscreen";
 import { Heading, GridItem } from "@chakra-ui/react";
 import ProjectCard from "../components/ProjectCard";
 import projectData from "../data/projectData";
+import { Fragment } from "react";
 
 const ProjectSection = () => {
   return (
@@ -25,7 +26,7 @@ const ProjectSection = () => {
       </GridItem>
 
       {projectData.map((project) => (
-        <>
+        <Fragment key={project.title}>
           <GridItem colSpan={{ base: 12, md: 6, lg: 4 }}>
             <ProjectCard
               key={project.title}
@@ -35,7 +36,7 @@ const ProjectSection = () => {
               url={project.url}
             />
           </GridItem>
-        </>
+        </Fragment>
       ))}
     </Fullscreen>
   );

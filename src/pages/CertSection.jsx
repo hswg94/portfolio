@@ -2,6 +2,7 @@ import Fullscreen from "../components/layout/Fullscreen";
 import {Heading, GridItem } from "@chakra-ui/react";
 import certData from "../data/certData";
 import CertCard from "../components/CertCard";
+import { Fragment } from "react";
 
 const CertSection = () => {
   return (
@@ -25,7 +26,7 @@ const CertSection = () => {
       </GridItem>
 
       {certData.map((cert) => (
-        <>
+        <Fragment key={cert.title}>
           <GridItem colSpan={{ base: 12, md: 6, lg: 4 }}>
             <CertCard
               key={cert.title}
@@ -35,7 +36,7 @@ const CertSection = () => {
               url={cert.url}
             />
           </GridItem>
-        </>
+        </Fragment>
       ))}
     </Fullscreen>
   );
