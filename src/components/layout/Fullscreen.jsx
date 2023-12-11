@@ -11,7 +11,16 @@ const Fullscreen = (props) => {
       bgSize="cover"
       bgPosition="center"
     >
-      <Grid mx="auto" templateColumns="repeat(12, 1fr)" width="960px" maxW="80vw" py="15vh" id={props.id} gap={6}>
+      <Grid
+        alignItems="center"
+        py={48}
+        mx="auto"
+        templateColumns="repeat(12, 1fr)"
+        width="1280px"
+        maxW="80vw"
+        id={props.id}
+        gap={6}
+      >
         {props.children}
       </Grid>
     </Box>

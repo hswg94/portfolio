@@ -11,7 +11,7 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
-  Text
+  Divider
 } from "@chakra-ui/react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -35,6 +35,7 @@ const CardModal = ({ url }) => {
           <ModalHeader fontWeight="bold">Attention</ModalHeader>
           <ModalCloseButton />
           <ModalBody>{modalText}</ModalBody>
+          <Divider w="90%" mt={5} mx="auto"/>
           <ModalFooter>
             <Button mr="3" onClick={onClose}>
               Close

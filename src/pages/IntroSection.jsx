@@ -1,88 +1,95 @@
-import { Fragment, useEffect } from "react";
 import {
   Box,
-  Divider,
   GridItem,
   Heading,
-  HStack,
+  Stack,
   Icon,
   Text,
-  VStack,
-  useDisclosure,
-  Card,
-  CardHeader,
-  CardBody,
+  HStack,
+  Button,
+  Divider,
+  Link,
 } from "@chakra-ui/react";
-import { Collapse, Fade, ScaleFade, Slide, SlideFade } from "@chakra-ui/react";
-import Fullscreen from "../components/layout/Fullscreen";
-import introData from "../data/introData";
 
-const greeting = "Hi, I am William!";
-const bio = "A Web Developer specialised in React";
-const intro = "I built this website with React and styled it using Chakra UI.";
+import { SiReactos } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+import Fullscreen from "../components/layout/Fullscreen";
+import ContactModal from "../components/Modals/ContactModal";
+
+const intro =
+  "I am a dedicated web developer with a focus on continuous improvement. I specialize in technologies such as ReactJS, Node.js, and Express.js.  My journey is fueled by my desire to be an exceptional web developer, which pushes me across boundaries and staying ahead in the ever-evolving tech landscape.  Currently, I'm honing my skills in the cloud. The next milestone on my journey involves mastering AWS, and I'm actively working towards achieving certification in AWS Cloud.";
 
 const IntroSection = () => {
-  const { isOpen, onToggle } = useDisclosure();
-
-  useEffect(() => {
-    onToggle();
-  }, []);
-
   return (
     <Fullscreen
       id="intro-section"
       backgroundImageUrl='url("./images/background/intro.png")'
       isDarkBackground
     >
-      <GridItem colSpan={12}>
-        <ScaleFade in={isOpen} initialScale={0} transition={{ enter: { delay: 0.5, duration: 0.5 } }}
-        >
-          <Box bg="blackAlpha.600" p={10} mb="5vh" rounded="xl" align="center">
-            <VStack fontWeight="semibold" textShadow="0px 2px #000000">
-              {/* <Avatar src="" /> */}
-              <Heading as="h1" size="2xl">
-                {greeting}
-              </Heading>
-              <Text>{bio}</Text>
-              <Text mt={2} as="em">
-                {intro}
-              </Text>
-            </VStack>
-          </Box>
-        </ScaleFade>
-      </GridItem>
-
-      {introData.map(({ title, icon, tech }, index) => (
-        <Fragment key={title}>
-          <GridItem colSpan={{ base: 12, md: 6, lg: 4 }}>
-            <Collapse in={isOpen} transition={{ enter: { delay: `${1.25 + (index * 0.5)}`, duration: 0.5 } }}>
-              <Card
-                background="blackAlpha.600"
-                align="center"
-                borderRadius="3xl"
-                color="whiteAlpha.900"
-                height={{ base: "auto", md: "350px" }}
+      <GridItem colSpan={{ base: 12, md: 8, lg: 8 }}>
+        <Box bg="blackAlpha.600" p={10} rounded="2xl" boxShadow="dark-lg">
+          <Stack>
+            <HStack spacing={5}>
+              <motion.div
+                animate={{
+                  rotate: [360, 180, 0],
+                }}
+                transition={{
+                  ease: "linear",
+                  repeat: Infinity,
+                  repeatDelay: 0,
+                  duration: 1,
+                }}
               >
-                <CardHeader my={2}>
-                  <HStack spacing={5}>
-                    <Heading size="lg">{title}</Heading>
-                    <Icon boxSize={7} as={icon} />
-                  </HStack>
-                </CardHeader>
-                <Divider borderRadius="xl" borderWidth="3px" />
-                <CardBody>
-                  {tech.map(({ name, icon }) => (
-                    <HStack spacing={4} key={name}>
-                      <Icon boxSize={6} as={icon} />
-                      <Text fontSize="xl">{name}</Text>
-                    </HStack>
-                  ))}
-                </CardBody>
-              </Card>
-            </Collapse>
-          </GridItem>
-        </Fragment>
-      ))}
+                <Icon boxSize={20} as={FaReact} color="green.300"/>
+              </motion.div>
+
+              <Stack spacing={1}>
+                <Heading size="3xl">William Gan</Heading>
+                <Heading size="md" color="green.300">
+                  PASSIONATE WEB DEVELOPER
+                </Heading>
+              </Stack>
+            </HStack>
+            <Divider borderWidth={2} />
+            <Text fontSize="md" mt={5}>
+              {intro}
+            </Text>
+            <HStack mt={12}>
+              <ContactModal />
+              <Button
+                bgColor="green"
+                color="white"
+                as={Link}
+                href="./files/Resume.pdf"
+              >
+                Download CV
+              </Button>
+            </HStack>
+          </Stack>
+        </Box>
+      </GridItem>
+      <GridItem
+        colSpan={{ base: null, md: 4, lg: 4 }}
+        display={{ base: "none", md: "block" }}
+      >
+        <motion.div
+          animate={{
+            rotate: [0, 180, 360],
+            scale: [0.75, 1, 0.75],
+          }}
+          transition={{
+            ease: "linear",
+            repeat: Infinity,
+            repeatDelay: 0,
+            duration: 5,
+          }}
+        >
+          <Icon color="green.200" opacity={0.5} as={SiReactos} boxSize="100%" />
+        </motion.div>
+      </GridItem>
     </Fullscreen>
   );
 };

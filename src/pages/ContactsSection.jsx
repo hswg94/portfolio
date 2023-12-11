@@ -17,7 +17,7 @@ import Fullscreen from "../components/layout/Fullscreen";
 import useSubmit from "../hooks/useSubmit";
 import { useAlertContext } from "../context/alertContext";
 
-const ContactSection = () => {
+const ContactsSection = () => {
   const { isLoading, response, submit } = useSubmit();
   const { onOpen } = useAlertContext();
   //initialize form values, schema and submit behavior
@@ -117,4 +117,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default ContactsSection;

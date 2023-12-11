@@ -1,21 +1,20 @@
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa6";
+import { SiVisualstudiocode } from "react-icons/si";
 
-import { Icon, Box, HStack, Link } from "@chakra-ui/react";
+import {
+  Icon,
+  Box,
+  HStack,
+  Link,
+  MenuButton,
+  IconButton,
+  Menu,
+  MenuItem,
+  MenuList,
+  MenuDivider,
+} from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
-const socials = [
-  {
-    icon: FaEnvelope,
-    url: "mailto: hswg94@gmail.com",
-  },
-  {
-    icon: FaGithub,
-    url: "https://github.com/hswg94",
-  },
-  {
-    icon: FaLinkedin,
-    url: "https://www.linkedin.com/in/wlmg/",
-  },
-];
+import ContactModal from "../Modals/ContactModal";
 
 const Header = () => {
   const scrollToSection = (sectionId) => () => {
@@ -41,23 +40,37 @@ const Header = () => {
         color="white"
         width="1280px"
         maxW="80vw"
-        p={3}
+        p={4}
       >
-        <HStack spacing={3}>
-          {socials.map(({ icon, url }) => (
-            <a key={url} href={url} target="_blank" rel="noopener noreferrer">
-              <Icon mb="-1.5" boxSize={8} as={icon} key={url} />
-            </a>
-          ))}
+        <Icon as={SiVisualstudiocode} boxSize={9}></Icon>
+
+        <HStack spacing={4} display={{ base: "none", md: "flex" }}>
+          <Link onClick={scrollToSection("skills-section")}>Skills</Link>
+          <Link onClick={scrollToSection("projects-section")}>Projects</Link>
+          <Link onClick={scrollToSection("certs-section")}>Certificates</Link>
+          <ContactModal />
         </HStack>
-        <HStack spacing={3}>
-          <Link as="button" onClick={scrollToSection("project-section")}>
-            Projects
-          </Link>
-          <Link as="button" onClick={scrollToSection("cert-section")}>
-            Certificates
-          </Link>
-        </HStack>
+
+        <Menu>
+          <MenuButton
+            display={{ base: "flex", md: "none" }}
+            as={IconButton}
+            icon={<HamburgerIcon />}
+          />
+          <MenuList color="black">
+            <MenuItem as={Link} onClick={scrollToSection("skills-section")}>
+              Skills
+            </MenuItem>
+            <MenuItem as={Link} onClick={scrollToSection("projects-section")}>
+              Projects
+            </MenuItem>
+            <MenuItem as={Link} onClick={scrollToSection("certs-section")}>
+              Certificates
+            </MenuItem>
+            <MenuDivider />
+            <ContactModal />
+          </MenuList>
+        </Menu>
       </HStack>
     </Box>
   );

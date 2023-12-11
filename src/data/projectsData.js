@@ -1,4 +1,4 @@
-const projectData = [
+const projectsData = [
   {
     title: "eCommerce Concept",
     desc:
@@ -21,4 +21,4 @@ const projectData = [
   },
 ];
 
-export default projectData;
+export default projectsData;

@@ -1,13 +1,14 @@
-import Fullscreen from "../components/layout/Fullscreen";
-import { Heading, GridItem } from "@chakra-ui/react";
-import ProjectCard from "../components/ProjectCard";
-import projectData from "../data/projectData";
 import { Fragment } from "react";
+import { Heading, GridItem } from "@chakra-ui/react";
 
-const ProjectSection = () => {
+import Fullscreen from "../components/layout/Fullscreen";
+import ProjectCard from "../components/Cards/ProjectCard";
+import projectData from "../data/projectsData";
+
+const ProjectsSection = () => {
   return (
     <Fullscreen
-      id="project-section"
+      id="projects-section"
       backgroundImageUrl='url("./images/background/projects.png")'
       isDarkBackground
     >
@@ -42,4 +43,4 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+export default ProjectsSection;

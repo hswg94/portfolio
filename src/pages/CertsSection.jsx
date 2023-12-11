@@ -1,13 +1,13 @@
 import Fullscreen from "../components/layout/Fullscreen";
-import {Heading, GridItem } from "@chakra-ui/react";
-import certData from "../data/certData";
-import CertCard from "../components/CertCard";
+import { Heading, GridItem } from "@chakra-ui/react";
+import certData from "../data/certsData";
+import CertCard from "../components/Cards/CertCard";
 import { Fragment } from "react";
 
-const CertSection = () => {
+const CertsSection = () => {
   return (
     <Fullscreen
-      id="cert-section"
+      id="certs-section"
       backgroundImageUrl='url("./images/background/certs.png")'
       isDarkBackground
     >
@@ -42,4 +42,4 @@ const CertSection = () => {
   );
 };
 
-export default CertSection;
+export default CertsSection;

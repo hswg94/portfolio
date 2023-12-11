@@ -7,7 +7,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 
-import CardModal from "./CardModal";
+import CardModal from "../modals/CardModal";
 
 const ProjectCard = ({ title, desc, image, url }) => {
   return (
@@ -16,7 +16,7 @@ const ProjectCard = ({ title, desc, image, url }) => {
       borderRadius="3xl"
       height={{base: "auto", md: "500px"}}
     >
-      <Image src={image} height="30%" borderTopRadius="3xl" />
+      <Image src={image} height="40%" borderTopRadius="3xl" />
       <CardBody maxHeight="50%">
         <Stack spacing={3}>
           <Heading size="md">{title}</Heading>

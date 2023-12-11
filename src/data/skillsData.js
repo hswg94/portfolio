@@ -25,7 +25,7 @@ import {
   SiAdobepremierepro,
 } from "react-icons/si";
 
-const introData = [
+const skillsData = [
   {
     title: "Frontend",
     icon: FaComputer,
@@ -118,4 +118,4 @@ const introData = [
   },
 ];
 
-export default introData;
+export default skillsData;
