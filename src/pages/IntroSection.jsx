@@ -31,7 +31,7 @@ const IntroSection = () => {
       <GridItem colSpan={{ base: 12, md: 8, lg: 8 }}>
         <Box bg="blackAlpha.600" p={10} rounded="2xl" boxShadow="dark-lg">
           <Stack>
-            <HStack spacing={5}>
+            <HStack>
               <motion.div
                 animate={{
                   rotate: [360, 180, 0],
@@ -43,10 +43,9 @@ const IntroSection = () => {
                   duration: 1,
                 }}
               >
-                <Icon boxSize={20} as={FaReact} color="green.300"/>
+                <Icon boxSize={20} as={FaReact} color="green.300" display={{ base: "none", md: "flex" }}/>
               </motion.div>
-
-              <Stack spacing={1}>
+              <Stack spacing={2}>
                 <Heading size="3xl">William Gan</Heading>
                 <Heading size="md" color="green.300">
                   PASSIONATE WEB DEVELOPER
@@ -57,7 +56,7 @@ const IntroSection = () => {
             <Text fontSize="md" mt={5}>
               {intro}
             </Text>
-            <HStack mt={12}>
+            <HStack mt={10}>
               <ContactModal />
               <Button
                 bgColor="green"
@@ -87,7 +86,7 @@ const IntroSection = () => {
             duration: 5,
           }}
         >
-          <Icon color="green.200" opacity={0.5} as={SiReactos} boxSize="100%" />
+          <Icon color="green.200" opacity={0.8} as={SiReactos} boxSize="100%" />
         </motion.div>
       </GridItem>
     </Fullscreen>

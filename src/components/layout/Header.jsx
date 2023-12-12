@@ -39,8 +39,8 @@ const Header = () => {
         justifyContent="space-between"
         color="white"
         width="1280px"
-        maxW="80vw"
-        p={4}
+        maxW="90vw"
+        py={4}
       >
         <Icon as={SiVisualstudiocode} boxSize={9}></Icon>
 

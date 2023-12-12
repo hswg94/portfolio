@@ -17,7 +17,7 @@ const Fullscreen = (props) => {
         mx="auto"
         templateColumns="repeat(12, 1fr)"
         width="1280px"
-        maxW="80vw"
+        maxW="90vw"
         id={props.id}
         gap={6}
       >
