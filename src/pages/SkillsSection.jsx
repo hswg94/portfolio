@@ -25,8 +25,12 @@ const SkillsSection = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   useEffect(() => {
-    isInView && onToggle();
-    console.log("Skills section is in view: ", isInView);
+    if (isInView) {
+      const toggleTimer = setTimeout(() => {
+        onToggle();
+      }, 750);
+      return () => clearTimeout(toggleTimer);
+    }
   }, [isInView]);
 
   return (
@@ -40,7 +44,7 @@ const SkillsSection = () => {
           in={isOpen}
           initialScale={0.5}
           transition={{
-            enter: { delay: 0.5, duration: 0.5 },
+            enter: { duration: 0.5 },
           }}
         >
           <Heading
@@ -63,7 +67,7 @@ const SkillsSection = () => {
             <Collapse
               in={isOpen}
               transition={{
-                enter: { delay: `${1.5 + index * 0.5}`, duration: 1 },
+                enter: { delay: 0.5 + (0.25 * index), duration: 1 },
               }}
             >
               <Card
