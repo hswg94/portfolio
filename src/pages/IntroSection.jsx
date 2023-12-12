@@ -29,7 +29,7 @@ const IntroSection = () => {
       isDarkBackground
     >
       <GridItem colSpan={{ base: 12, md: 8, lg: 8 }}>
-        <Box bg="blackAlpha.600" p={10} rounded="2xl" boxShadow="dark-lg">
+        <Box bgGradient="linear(to-t, blackAlpha.300, blackAlpha.800)" p={10} rounded="2xl" boxShadow="dark-lg">
           <Stack>
             <HStack>
               <motion.div
@@ -47,7 +47,7 @@ const IntroSection = () => {
               </motion.div>
               <Stack spacing={2}>
                 <Heading size="3xl">William Gan</Heading>
-                <Heading size="md" color="green.300">
+                <Heading size="md" color="green.400">
                   PASSIONATE WEB DEVELOPER
                 </Heading>
               </Stack>
@@ -59,8 +59,7 @@ const IntroSection = () => {
             <HStack mt={10}>
               <ContactModal />
               <Button
-                bgColor="green"
-                color="white"
+                colorScheme="green"
                 as={Link}
                 href="./files/Resume.pdf"
               >
