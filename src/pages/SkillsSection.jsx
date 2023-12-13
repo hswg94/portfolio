@@ -28,7 +28,7 @@ const SkillsSection = () => {
     if (isInView) {
       const toggleTimer = setTimeout(() => {
         onToggle();
-      }, 750);
+      }, 400);
       return () => clearTimeout(toggleTimer);
     }
   }, [isInView]);
