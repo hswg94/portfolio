@@ -11,15 +11,22 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
-  Divider
+  Divider,
+  HStack,
+  Text,
 } from "@chakra-ui/react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { GoAlert } from "react-icons/go";
+import { IoWarningOutline } from "react-icons/io5";
 
 const modalText = (
-    <>
-      This project is hosted on a server using a free-tier plan, the <b><i>initial loading time</i></b> upon
-      access could take a minute or longer.
-    </>
+  <>
+    This project is hosted on a server using a free-tier plan, the{" "}
+    <b>
+      <i>initial loading time</i>
+    </b>{" "}
+    upon access could take a minute or longer.
+  </>
 );
 
 const CardModal = ({ url }) => {
@@ -32,10 +39,14 @@ const CardModal = ({ url }) => {
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
         <ModalContent bg="blackAlpha.700" color="white">
-          <ModalHeader fontWeight="bold">Attention</ModalHeader>
+          <ModalHeader fontWeight="bold">
+            <HStack>
+              <Icon as={IoWarningOutline}/><Text>Attention</Text>
+            </HStack>
+          </ModalHeader>
           <ModalCloseButton />
           <ModalBody>{modalText}</ModalBody>
-          <Divider w="90%" mt={5} mx="auto"/>
+          <Divider w="90%" mt={5} mx="auto" />
           <ModalFooter>
             <Button mr="3" onClick={onClose}>
               Close
