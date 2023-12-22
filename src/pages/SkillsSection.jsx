@@ -20,18 +20,18 @@ import introData from "../data/skillsData";
 import Fullscreen from "../components/layout/Fullscreen";
 
 const SkillsSection = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const { isOpen, onToggle } = useDisclosure();
+  // const ref = useRef(null);
+  // const isInView = useInView(ref, { once: true });
+  // const { isOpen, onToggle } = useDisclosure();
 
-  useEffect(() => {
-    if (isInView) {
-      const toggleTimer = setTimeout(() => {
-        onToggle();
-      }, 400);
-      return () => clearTimeout(toggleTimer);
-    }
-  }, [isInView]);
+  // useEffect(() => {
+  //   if (isInView) {
+  //     const toggleTimer = setTimeout(() => {
+  //       onToggle();
+  //     }, 400);
+  //     return () => clearTimeout(toggleTimer);
+  //   }
+  // }, [isInView]);
 
   return (
     <Fullscreen
@@ -39,14 +39,14 @@ const SkillsSection = () => {
       backgroundImageUrl='url("./images/background/intro.png")'
       isDarkBackground
     >
-      <GridItem colSpan={12} ref={ref}>
-        <ScaleFade
+      <GridItem colSpan={12} /*ref={ref}*/>
+        {/* <ScaleFade
           in={isOpen}
           initialScale={0.5}
           transition={{
             enter: { duration: 0.5 },
           }}
-        >
+        > */}
           <Heading
             textShadow="0px 3px #000000"
             bg="blackAlpha.600"
@@ -58,18 +58,18 @@ const SkillsSection = () => {
           >
             Skillset
           </Heading>
-        </ScaleFade>
+        {/* </ScaleFade> */}
       </GridItem>
 
       {introData.map(({ title, icon, tech }, index) => (
         <Fragment key={title}>
           <GridItem colSpan={{ base: 12, md: 6, lg: 4 }}>
-            <Collapse
+            {/* <Collapse
               in={isOpen}
               transition={{
                 enter: { delay: 0.5 + (0.25 * index), duration: 1 },
               }}
-            >
+            > */}
               <Card
                 background="blackAlpha.600"
                 align="center"
@@ -93,7 +93,7 @@ const SkillsSection = () => {
                   ))}
                 </CardBody>
               </Card>
-            </Collapse>
+            {/* </Collapse> */}
           </GridItem>
         </Fragment>
       ))}
