@@ -14,10 +14,10 @@ const ProjectCard = ({ title, desc, image, url }) => {
     <Card
       backgroundColor="whiteAlpha.800"
       borderRadius="3xl"
-      height={{base: "auto", md: "500px"}}
+      height={{base: "auto", md: "600px"}}
     >
-      <Image src={image} height="40%" borderTopRadius="3xl" />
-      <CardBody maxHeight="50%">
+      <Image backgroundColor="black" src={image} objectFit="cover" height="50%" borderTopRadius="3xl" />
+      <CardBody maxHeight="40%">
         <Stack spacing={3}>
           <Heading size="md">{title}</Heading>
           <Text>{desc}</Text>
