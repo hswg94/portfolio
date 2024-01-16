@@ -1,20 +1,15 @@
-import { Fragment, useEffect, useRef } from "react";
+import { Fragment } from "react";
 import {
   Divider,
   GridItem,
   Heading,
   Icon,
   Text,
-  useDisclosure,
   Card,
   CardHeader,
   CardBody,
   HStack,
-  ScaleFade,
-  Collapse,
 } from "@chakra-ui/react";
-
-import { useInView } from "framer-motion";
 
 import introData from "../data/skillsData";
 import Fullscreen from "../components/layout/Fullscreen";
@@ -61,7 +56,7 @@ const SkillsSection = () => {
         {/* </ScaleFade> */}
       </GridItem>
 
-      {introData.map(({ title, icon, tech }, index) => (
+      {introData.map(({ title, icon, tech }) => (
         <Fragment key={title}>
           <GridItem colSpan={{ base: 12, md: 6, lg: 4 }}>
             {/* <Collapse
