@@ -19,15 +19,6 @@ const projectsData = [
     ],
     url: "https://ecommercepoc.up.railway.app/",
   },
-  {
-    title: "To Be Updated...",
-    desc: "This application is designed to showcase an Authentication system built with MongoDB, Express.js, React.js, Redux, and Node.js, serving as a foundation for further exploration and development.",
-    images: [
-      "./images/photo3.jpg",
-      "./images/photo3.jpg",
-      "./images/photo3.jpg",
-    ],
-  },
 ];
 
 export default projectsData;
