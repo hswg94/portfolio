@@ -11,7 +11,7 @@ const NavBar = () => {
         <Navbar.Brand href="#home"><SiVisualstudiocode size={30} /></Navbar.Brand>
         <div className="d-flex gap-3 align-items-center">
           {socialsData.map(({icon: Icon, url}, index) => (
-            <Nav.Link key={index} href={url}>
+            <Nav.Link key={index} href={url} target="_blank" rel="noreferrer">
               <Icon size={30}/>
             </Nav.Link>
           ))}

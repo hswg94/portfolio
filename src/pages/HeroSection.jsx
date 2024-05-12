@@ -34,7 +34,7 @@ const HeroSection = () => {
             </h3>
             <p>{introEssay}</p>
 
-            <a href="./files/Resume.pdf" className="text-decoration-none">
+            <a href="./files/Resume.pdf" className="text-decoration-none" target="_blank" rel="noreferrer">
               <button>
                 Download Resume <ArrowDownCircle size={25} />
               </button>

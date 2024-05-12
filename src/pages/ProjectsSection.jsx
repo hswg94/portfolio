@@ -11,8 +11,7 @@ const ProjectsSection = () => {
           <Col size={12}>
             <h1>Projects</h1>
             <p>
-              Embarking on various projects has allowed me to showcase my skills
-              and deliver tangible results. Here's a glimpse into my project
+              Embarking on various projects has allowed me to showcase and hone my practical skills. Take a glimpse into my project
               portfolio!
             </p>
 
