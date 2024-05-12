@@ -9,7 +9,7 @@ export const ProjectCard = ({ title, desc, images, url }) => {
         <img src={images[0]} className="rounded"/>
       </Col>
       <Col lg={6} className="d-flex flex-column justify-content-center">
-        <h2 className="mb-5">{title}</h2>
+        <h2 className="mb-3">{title}</h2>
         <p>{desc}</p>
         <a href={url} className="text-decoration-none" target="_blank" rel="noreferrer">
           <Button variant="dark" className="p-3 align-items-center">
