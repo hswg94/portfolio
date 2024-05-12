@@ -17,19 +17,17 @@ const SkillsSection = () => {
                 I bring a diverse set of skills to the table, honed through
                 dedicated learning and practical application.
               </p>
-              <div className="d-flex justify-content-evenly">
+              <div className="d-flex flex-wrap justify-content-evenly">
                 <div>
-                  <FaComputer size={80} className="my-1" />
+                  <FaComputer size={60} className="my-1" />
                   <p>Cloud Computing</p>
                 </div>
-
                 <div>
-                  <FaWrench size={80} className="my-1" />
+                  <FaWrench size={60} className="my-1" />
                   <p>Infrastructure & Networking</p>
                 </div>
-
                 <div>
-                  <FaServer size={80} className="my-1" />
+                  <FaServer size={60} className="my-1" />
                   <p>Web Development</p>
                 </div>
               </div>

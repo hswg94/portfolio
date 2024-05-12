@@ -7,10 +7,11 @@ import ProjectsSection from "./pages/ProjectsSection";
 import CertsSection from './pages/CertsSection';
 import ContactsSection from "./pages/ContactsSection";
 import Footer from "./components/layout/Footer";
+import Container from "react-bootstrap/Container";
 
 const App = () => {
   return (
-    <div className="App">
+    <Container fluid>
       <NavBar />
       <HeroSection />
       <SkillsSection />
@@ -18,7 +19,7 @@ const App = () => {
       <CertsSection />
       <ContactsSection />
       <Footer />
-    </div>
+    </Container>
   );
 }
 
