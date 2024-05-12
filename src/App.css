@@ -269,14 +269,14 @@ input:focus, textarea:focus, select:focus {
 
 /************ Contacts Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  background: linear-gradient(90deg, #9f236d 0.00%, #36209a 100.00%);
+  padding: 50px;
 }
 .contact img {
   width: 90%;
 }
 .contact h2 {
-	font-size: 47px;
+	font-size: 45px;
 	font-weight: 700;
 }
 
