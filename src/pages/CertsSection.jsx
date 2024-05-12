@@ -20,7 +20,7 @@ const CertsSection = () => {
             <Carousel className="w-75 d-flex" interval={1000}>
                 {certsData.map((cert, index) => (
                     <Carousel.Item key={index}>
-                        <a href={cert.url}>
+                        <a href={cert.url} target="_blank" rel="noreferrer">
                           <Image src={cert.image}/>
                         </a>
                         <Carousel.Caption>

@@ -11,7 +11,7 @@ export const ProjectCard = ({ title, desc, images, url }) => {
       <Col lg={6} className="d-flex flex-column justify-content-center">
         <h2 className="mb-5">{title}</h2>
         <p>{desc}</p>
-        <a href={url} className="text-decoration-none">
+        <a href={url} className="text-decoration-none" target="_blank" rel="noreferrer">
           <Button variant="dark" className="p-3 align-items-center">
             View Project&nbsp; <FaExternalLinkAlt />
           </Button>
