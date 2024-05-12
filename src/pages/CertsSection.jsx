@@ -1,9 +1,11 @@
-import { Container, Row, Col, Card, Image } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import certsData from "../data/certsData";
+import colorRight from "../assets/images/colorRight.png";
 
 const CertsSection = () => {
   return (
-    <section className="project">
+    <section className="cert" id="cert">
+      <img className="z-n1 background-image-right2" src={colorRight}></img>
       <Container>
         <Row>
           <Col size={12}>

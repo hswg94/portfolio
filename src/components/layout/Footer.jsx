@@ -1,4 +1,4 @@
-import { Container, Row, Col, Nav } from "react-bootstrap";
+import { Container, Col, Nav } from "react-bootstrap";
 import socialsData from "../../data/socialsData";
 
 const Footer = () => {

@@ -3,7 +3,7 @@ import headerImg from "../assets/icons/header-img.svg";
 import { ArrowDownCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import colorSharp2 from "../assets/images/color-sharp2.png";
+import colorRight from "../assets/images/colorRight.png";
 import { Typewriter } from "react-simple-typewriter";
 
 const HeroSection = () => {
@@ -13,6 +13,7 @@ const HeroSection = () => {
 
   return (
     <section className="hero" id="home">
+      <img className="z-n1 background-image-right" src={colorRight}></img>
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
@@ -63,7 +64,6 @@ const HeroSection = () => {
           </Col>
         </Row>
       </Container>
-      <img className="z-n1 background-image-right" src={colorSharp2}></img>
     </section>
   );
 };

@@ -81,10 +81,33 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
+
+.background-image-right {
+  width: 50%;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.background-image-left {
+  width: 50%;
+  top: 1;
+  left: 0;
+  position: absolute;
+}
+
+.background-image-right2 {
+  width: 50%;
+  top: 1;
+  right: 0;
+  position: absolute;
+}
+
+
+
 /************ Hero CSS ************/
 .hero {
   padding: 100px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -143,13 +166,6 @@ input:focus, textarea:focus, select:focus {
     }
 }
 
-.background-image-right {
-  position: absolute;
-  width: 50%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
 
 /************ Skills Css ************/
 .skill {
@@ -169,46 +185,31 @@ input:focus, textarea:focus, select:focus {
     margin: 10px auto 40px auto;
 }
 
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-}
+
 
 /************ Projects Css ************/
-.project {
-  padding: 80px 0;
-  position: relative;
-  background-color: black;
+.projects {
+  padding: 100px 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.project .nav.nav-pills {
+.projects .nav.nav-pills {
   width: 100%;
   margin: 0 auto;
   background-color: rgb(255 255 255 / 20%);
   overflow: hidden;
   border-radius: 10px;
 }
-.project .nav.nav-pills .nav-item {
+
+.projects .nav.nav-pills .nav-item {
   width: 50%;
   height: 100%;
-}
-
-.project .nav.nav-pills .nav-link {
-  background-color: transparent;
-  padding: 18px 0;
-  color: #fff;
-  width: 100%;
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  position: relative;
-  transition: 0.5s ease-in-out;
-  text-align: center;
   z-index: 0;
 }
-.project .nav.nav-pills .nav-link::before {
+
+.projects .nav.nav-pills .nav-link::before {
     content: "";
     position: absolute;
     width: 0;
@@ -219,31 +220,50 @@ input:focus, textarea:focus, select:focus {
     transition: 0.4s ease-in-out;
     z-index: -1;
 }
-.project .nav.nav-pills .nav-link.active::before {
+
+.projects .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
 }
 
-.project h1 {
+.projects .nav.nav-pills .nav-link {
+  background-color: transparent;
+  padding: 18px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+}
+
+.projects h1 {
 	font-size: 50px;
-	font-weight: 700;
   color:rgba(255, 255, 255, 0.9);
 }
 
-.project h2 {
+.projects h2 {
 	font-size: 40px;
 	font-weight: 700;
   color:rgba(255, 255, 255, 0.9);
 }
 
-.project button {
+.projects button {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 1px;
 }
 
-.certificates h1 {
+.cert {
+  padding: 100px 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cert h1 {
 	font-size: 50px;
-	font-weight: 700;
   color:rgba(255, 255, 255, 0.9);
 }
 
@@ -264,13 +284,13 @@ input:focus, textarea:focus, select:focus {
 /*** FOOTER CSS ***/
 .footer {
   padding: 20px;
-  background-image: url('./assets/img/footer-bg.png');
+  background-image: url('./assets/images/colorFooter.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .footer img {
-  width: 25%;
+  width: 50%;
 }
 .footer p {
   font-weight: 400;

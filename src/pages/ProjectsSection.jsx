@@ -1,11 +1,12 @@
 import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projectsData from "../data/projectsData";
-
+import colorLeft from "../assets/images/colorLeft.png";
 
 const ProjectsSection = () => {
   return (
-    <section className="project" id="projects">
+    <section className="projects" id="projects">
+      <img className="z-n1 background-image-left" src={colorLeft}/>
       <Container>
         <Row>
           <Col size={12}>

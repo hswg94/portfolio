@@ -1,5 +1,4 @@
 import "react-multi-carousel/lib/styles.css";
-import colorSharp from "../assets/images/color-sharp.png";
 import {
   FaServer,
   FaComputer,
@@ -38,11 +37,6 @@ const SkillsSection = () => {
           </div>
         </div>
       </div>
-      <img
-        className="z-n1 background-image-left"
-        src={colorSharp}
-        alt="Image"
-      />
     </section>
   );
 };
