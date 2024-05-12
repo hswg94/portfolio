@@ -1,18 +1,18 @@
 /************ Custom Font ************/
 @font-face {
 	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Bold.ttf');
+	src: url('./assets/fonts/CentraNo2-Bold.ttf');
 	font-weight: 700;
 }
 @font-face {
 	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Medium.ttf');
+	src: url('./assets/fonts/CentraNo2-Medium.ttf');
 	font-weight: 500;
 }
 @font-face {
 	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Book.ttf');
-	font-weight: 400;
+	src: url('./assets/fonts/CentraNo2-Book.ttf');
+	font-weight: 300;
 }
 
 /************ GLOBAL CSS ************/
@@ -50,9 +50,9 @@ p, a, li, button, ul {
 }
 
 p {
-  color:rgba(255, 255, 255, 0.7);
-  font-size: 18px;
-  letter-spacing: 1px;
+  color:rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  letter-spacing: 0.8px;
   line-height: 1.5em;
 }
 
@@ -100,6 +100,7 @@ input:focus, textarea:focus, select:focus {
   margin-bottom: 16px;
   display: inline-block;
 }
+
 .hero h1 {
   font-size: 65px;
   font-weight: 700;
@@ -274,7 +275,7 @@ input:focus, textarea:focus, select:focus {
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #B8B8B8;
+  color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.5px;
   margin-top: 15px;
   margin-bottom: 0px;
