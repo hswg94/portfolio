@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/icons/header-img.svg";
 import { ArrowDownCircle } from "react-bootstrap-icons";
 import "animate.css";
