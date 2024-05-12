@@ -16,7 +16,7 @@ const CertsSection = () => {
               acquiring new skills.
             </p>
             <div className="d-flex justify-content-center">
-              <Row xs={1} md={3} className="g-3">
+              <Row xs={1} md={3} className="g-4">
                 {certsData.map(({ title, date, image, url }, index) => (
                   <Col key={index}>
                     <a
