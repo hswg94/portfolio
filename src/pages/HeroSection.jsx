@@ -8,7 +8,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const HeroSection = () => {
   const title = "Welcome to My Portfolio";
-  const intro = "Hi, I'm William";
+  const intro = "I'm William Gan";
   const introEssay = `I am a dedicated web developer with a focus on continuous improvement. I specialize in technologies such as ReactJS, Node.js, and Express.js. My journey is fueled by my desire to be an exceptional web developer, which pushes me across boundaries and staying ahead in the ever-evolving tech landscape. The next milestone on my journey involves mastering AWS, and I'm actively working towards achieving a certification in AWS Cloud.`;
 
   return (
