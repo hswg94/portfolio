@@ -1,16 +1,22 @@
 /* eslint-disable react/prop-types */
-import { Col } from "react-bootstrap";
+import { Col, Button } from "react-bootstrap";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
-export const ProjectCard = ({ title, description, imgUrl }) => {
+export const ProjectCard = ({ title, desc, images, url }) => {
   return (
-    <Col size={12} sm={6} md={4}>
-      <div className="proj-imgbx">
-        <img src={imgUrl} />
-        <div className="proj-txtx">
-          <h4>{title}</h4>
-          <span>{description}</span>
-        </div>
-      </div>
-    </Col>
-  )
-}
+    <>
+      <Col lg={6} className="mb-5">
+        <img src={images[0]} className="rounded"/>
+      </Col>
+      <Col lg={6} className="d-flex flex-column justify-content-center">
+        <h2>{title}</h2>
+        <p>{desc}</p>
+        <a href={url} className="text-decoration-none">
+          <Button variant="dark" className="p-3 align-items-center">
+            View Project&nbsp; <FaExternalLinkAlt />
+          </Button>
+        </a>
+      </Col>
+    </>
+  );
+};

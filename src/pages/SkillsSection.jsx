@@ -21,17 +21,17 @@ const SkillsSection = () => {
               <div className="d-flex justify-content-evenly">
                 <div>
                   <FaComputer size={80} className="my-1" />
-                  <h5>Frontend</h5>
+                  <p>Cloud Computing</p>
                 </div>
 
                 <div>
                   <FaWrench size={80} className="my-1" />
-                  <h5>Backend</h5>
+                  <p>Infrastructure & Networking</p>
                 </div>
 
                 <div>
                   <FaServer size={80} className="my-1" />
-                  <h5>Infrastructure</h5>
+                  <p>Web Development</p>
                 </div>
               </div>
             </div>

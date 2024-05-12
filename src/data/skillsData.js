@@ -27,7 +27,7 @@ import {
 
 const skillsData = [
   {
-    title: "Frontend",
+    title: "Web Development",
     icon: FaComputer,
     tech: [
       {
@@ -61,7 +61,7 @@ const skillsData = [
     ],
   },
   {
-    title: "Backend",
+    title: "Cloud Computing",
     icon: FaServer,
     tech: [
       {
@@ -87,7 +87,7 @@ const skillsData = [
     ],
   },
   {
-    title: "Tools",
+    title: "Infrastructure & Networking",
     icon: FaWrench,
     tech: [
       {

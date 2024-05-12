@@ -8,11 +8,11 @@ import {
 import certsData from "../data/certsData";
 const CertsSection = () => {
   return (
-    <section className="project" id="projects">
+    <section className="project">
       <Container>
         <Row>
           <Col size={12}>
-            <h2>Certificates</h2>
+            <h1>Certificates</h1>
             <p>
             These certifications represent my dedication to staying current in the ever-evolving landscape of technology and my passion for acquiring new skills.
             </p>
