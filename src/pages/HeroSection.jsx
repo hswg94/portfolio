@@ -18,12 +18,15 @@ const HeroSection = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">{title}</span>
             <h1>{intro}</h1>
-            <h3 className="text-grey"style={{ letterSpacing: '1px', fontWeight: '600' }}>
+            <h3
+              className="text-grey"
+              style={{ letterSpacing: "1px", fontWeight: "600" }}
+            >
               <Typewriter
                 words={[
                   `An Aspiring Solutions Architect`,
                   `A former Software Engineer`,
-                  `A Self-Dedicated Learner`
+                  `A Dedicated Self-Learner`,
                 ]}
                 loop={0}
                 cursor
@@ -34,7 +37,12 @@ const HeroSection = () => {
             </h3>
             <p>{introEssay}</p>
 
-            <a href="./files/Resume.pdf" className="text-decoration-none" target="_blank" rel="noreferrer">
+            <a
+              href="./files/Resume.pdf"
+              className="text-decoration-none"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button>
                 Download Resume <ArrowDownCircle size={25} />
               </button>
