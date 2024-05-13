@@ -20,7 +20,7 @@ const ContactsSection = () => {
             </TrackVisibility>
           </Col>
           <Col sm={12} md={6}>
-            <h2 className="my-3">Get In Touch</h2>
+            <h2 className="mt-5 mb-2 mt-md-0">Get In Touch</h2>
             <div className="d-flex gap-4">
               {socialsData.map(({icon: Icon, url}, index) => (
               <a key={index} href={url} target="_blank" rel="noopener noreferrer">
