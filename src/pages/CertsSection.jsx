@@ -1,6 +1,6 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
 import certsData from "../data/certsData";
-import colorRight from "../assets/images/colorRight.png";
+const colorRight = './images/background/colorRight.webp';
 
 const CertsSection = () => {
   return (

@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/icons/contact-img.svg";
+const contactImg ='./images/contact-img.svg';
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import socialsData from "../data/socialsData";

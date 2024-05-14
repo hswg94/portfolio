@@ -1,10 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/icons/header-img.svg";
+const headerImg = "./images/header-img.svg";
 import { ArrowDownCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import colorRight from "../assets/images/colorRight.png";
 import { Typewriter } from "react-simple-typewriter";
+
+const colorRight = './images/background/colorRight.webp';
 
 const HeroSection = () => {
   const title = "Welcome to My Portfolio";

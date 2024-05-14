@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projectsData from "../data/projectsData";
-import colorLeft from "../assets/images/colorLeft.png";
+const colorLeft = './images/background/colorLeft.webp';
 
 const ProjectsSection = () => {
   return (
