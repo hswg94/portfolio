@@ -1,8 +1,8 @@
 import "react-multi-carousel/lib/styles.css";
 import {
-  FaServer,
-  FaComputer,
-  FaWrench,
+  FaAws,
+  FaNetworkWired,
+  FaCode,
 } from "react-icons/fa6";
 
 const SkillsSection = () => {
@@ -19,15 +19,15 @@ const SkillsSection = () => {
               </p>
               <div className="d-flex flex-wrap justify-content-evenly">
                 <div>
-                  <FaComputer size={60} className="my-1" />
+                  <FaAws size={60} className="my-1" />
                   <p>Cloud Computing</p>
                 </div>
                 <div>
-                  <FaWrench size={60} className="my-1" />
+                  <FaNetworkWired size={60} className="my-1" />
                   <p>Infrastructure & Networking</p>
                 </div>
                 <div>
-                  <FaServer size={60} className="my-1" />
+                  <FaCode size={60} className="my-1" />
                   <p>Web Development</p>
                 </div>
               </div>
