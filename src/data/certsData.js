@@ -1,15 +1,15 @@
 const certsData = [
   {
+    title: "AWS Certified Solutions Architect",
+    date: "25th May 2024",
+    image: "./images/certs/CertifiedSolutionsArchitecture.webp",
+    url: "https://cp.certmetrics.com/amazon/en/public/verify/credential/511543cc34724ee2884096136ca8736f",
+  },
+  {
     title: "AWS Certified Cloud Practitioner",
     date: "27th Mar 2024",
     image: "./images/certs/CertifiedCloudPractitionerCertificate.webp",
     url: "https://cp.certmetrics.com/amazon/en/public/verify/credential/ab492459d42740f0bbf0e879b1b22e9b",
-  },
-  {
-    title: "eCommerce Platform Concepts",
-    date: "23rd Oct 2023",
-    image: "./images/certs/eCommerceConcept.webp",
-    url: "https://www.udemy.com/certificate/UC-e1bc31b2-2cde-426d-a47c-cb3582abcae6/",
   },
   {
     title: "Meta Front-End Developer",

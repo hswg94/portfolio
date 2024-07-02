@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-const headerImg = "./images/header-img.svg";
+const headerImg = "./images/dev.svg";
 import { ArrowDownCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";

@@ -156,13 +156,13 @@ input:focus, textarea:focus, select:focus {
 }
 @keyframes updown {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-50px);
     }
     50% {
-        transform: translateY(20px);
+        transform: translateY(-30px);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-50px);
     }
 }
 
