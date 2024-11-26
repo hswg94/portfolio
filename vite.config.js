@@ -5,5 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 // if import to AWS set  to "/" to solve 403 forbidden
-  base: "/portfolio"
+  base: "/portfolio/"
+  // base: "/"
 })
