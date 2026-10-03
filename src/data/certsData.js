@@ -18,16 +18,16 @@ const certsData = [
     url: "https://cp.certmetrics.com/amazon/en/public/verify/credential/ab492459d42740f0bbf0e879b1b22e9b",
   },
   {
+    title: "Meta Front-End Developer",
+    date: "2nd Aug 2023",
+    image: "./images/certs/MetaFrontEnd.webp",
+    url: "https://www.coursera.org/account/accomplishments/professional-cert/PCAZUNMQVJXP",
+  },
+  {
     title: "Web Developer Bootcamp 2023",
     date: "26th Apr 2023",
     image: "./images/certs/WebDevBootcamp2023.webp",
     url: "https://www.udemy.com/certificate/UC-01a21808-7e44-4703-a58d-36fd96b8268e/",
-  },
-  {
-    title: "Advanced React",
-    date: "26th June 2023",
-    image: "./images/certs/AdvancedReact.webp",
-    url: "https://www.coursera.org/account/accomplishments/verify/4XH675WAAR5B",
   },
   {
     title: "Google Data Analytics",
