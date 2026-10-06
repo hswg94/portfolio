@@ -4,6 +4,8 @@ import {
   FaNetworkWired,
   FaCode,
 } from "react-icons/fa6";
+import { SiKubernetes } from "react-icons/si";
+import { TbInfinity } from "react-icons/tb";
 
 const SkillsSection = () => {
   return (
@@ -18,17 +20,17 @@ const SkillsSection = () => {
                 dedicated learning and practical application.
               </p>
               <div className="d-flex flex-wrap justify-content-evenly">
-                <div>
+                <div className="skill-item">
                   <FaAws size={60} className="my-1" />
                   <p>Cloud Computing</p>
                 </div>
-                <div>
-                  <FaNetworkWired size={60} className="my-1" />
-                  <p>Infrastructure & Networking</p>
+                <div className="skill-item">
+                  <SiKubernetes size={60} className="my-1" />
+                  <p>Kubernetes</p>
                 </div>
-                <div>
-                  <FaCode size={60} className="my-1" />
-                  <p>Web Development</p>
+                <div className="skill-item">
+                  <TbInfinity size={60} className="my-1" />
+                  <p>CI/CD</p>
                 </div>
               </div>
             </div>

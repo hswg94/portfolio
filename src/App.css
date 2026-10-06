@@ -184,6 +184,10 @@ input:focus, textarea:focus, select:focus {
 .skill p {
     margin: 10px auto 40px auto;
 }
+.skill-item {
+  flex: 1 1 0;
+  min-width: 160px;
+}
 
 
 
