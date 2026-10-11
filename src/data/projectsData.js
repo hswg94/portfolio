@@ -1,6 +1,6 @@
 const projectsData = [
   {
-    title: "eCommerce PoC",
+    title: "eCommerce PoC (Offline)",
     desc: "This is an eCommerce proof of concept hosted on AWS and provisioned with Terraform. The application is built with MongoDB, Express.js, React.js, Redux, and Node.js. It features Authentication, Authorization, Product Search, Product Ratings/Reviews, Checkout/Payment Gateway, & Administration Features.",
     images: [
       "./images/projects/ecommercepoc.webp",
